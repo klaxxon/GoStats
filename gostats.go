@@ -4,8 +4,14 @@ import (
   time
 )
 
-// avgTime returns the average and max duration in buffer
-func avgTime(binsize int) func(time.Duration) DurationStats {
+type DurationStats struct {
+	Avg time.Duration
+	Max time.Duration
+	Min time.Duration
+}
+
+// durationStats returns the DurationStats for the previous setup
+func durationStats(binsize int) func(time.Duration) DurationStats {
 	bins := make([]time.Duration, binsize)
 	var sum time.Duration
 	var count int
