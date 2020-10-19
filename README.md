@@ -1,5 +1,5 @@
 # GoStats
-Simple closure function to provide average, min, max over configurable bin size.
+Simple closure function to provide average, min, max of time.Duration over configurable bin size.
 
 ```
 // We will average over the last 10 samples
