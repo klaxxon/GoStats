@@ -1,7 +1,7 @@
 package gostats
 
 import (
-  time
+  "time"
 )
 
 type DurationStats struct {
