@@ -10,8 +10,8 @@ type DurationStats struct {
 	Min time.Duration
 }
 
-// durationStats returns the DurationStats for the previous setup
-func durationStats(binsize int) func(time.Duration) DurationStats {
+// GetDurationStatsFunc returns the DurationStats for the previous setup
+func GetDurationStatsFunc(binsize int) func(time.Duration) DurationStats {
 	bins := make([]time.Duration, binsize)
 	var sum time.Duration
 	var count int
