@@ -1,5 +1,6 @@
 # GoStats
 Simple closure function to provide average, min, max of time.Duration over configurable bin size.
+This is a useless example that measures a sleep call and also the calls into that function.
 
 ```
 package main
